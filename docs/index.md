@@ -16,14 +16,14 @@ hero:
     tagline: 为开发者提供高效、便捷的日常开发工具
     image:
         # 首页右边的图片
-        src: /image/avatar.jpg
+        src: /image/avatar.png
         # 图片的描述
         alt: avatar
     # 按钮相关
     actions:
     - theme: brand
-      text: 进入主页
-      link: /column/views/guide
+      text: 开发文档
+      link: /introduction/quickStart
     - theme: alt
       text: 个人成长
       link: /column/Growing/

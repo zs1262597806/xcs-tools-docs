@@ -4,7 +4,10 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     title: "小仓桑Tools",
     description: "小仓桑Tools工具集",
-    lang: 'zh-CN',
+    head: [
+        // 添加图标
+        ["link", { rel: "icon", href: "./image/favicon.ico" }],
+    ],
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
@@ -20,7 +23,20 @@ export default defineConfig({
             {text: 'API文档', link: '/api/spec'}
         ],
 
+        outline: {
+            level: [2, 3], // 显示 <h2> 和 <h3> 标题
+        },
+
         sidebar: {
+            '/introduction/': [
+                {
+                    text: '指南',
+                    items: [
+                        {text: '介绍', link: '/introduction'},
+                        {text: '快速开始', link: '/introduction/quickStart'},
+                    ]
+                }
+            ],
             '/array/': [
                 {
                     text: '数组工具',
