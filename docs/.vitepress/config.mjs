@@ -45,6 +45,7 @@ export default defineConfig({
                         {text: '首字母大写转换', link: '/string/capitalize'},
                         {text: '短横线命名转小驼峰命名', link: '/string/kebabToCamel'},
                         {text: '生成随机字符串', link: '/string/generateRandomString'},
+                        {text: '格式化日期输出', link: '/string/formatDate'},
                     ]
                 }
             ]
