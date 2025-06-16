@@ -2,6 +2,7 @@ import {defineConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    base: '/xcs-tools-docs/',
     title: "小仓桑Tools",
     description: "小仓桑Tools工具集",
     lang: 'zh-CN',
