@@ -1,0 +1,93 @@
+:root {
+  /* 标题 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    135deg,
+    #76c4fd 10%,
+    #bbe2fe 100%
+  );
+
+  /* 图标背景 */
+  --vp-home-hero-image-background-image: linear-gradient(
+    135deg,
+    #bbe2fe 10%,
+    #76c4fd 100%
+  );
+  --vp-home-hero-image-filter: blur(150px);
+
+  /* brand按钮 */
+  /* 正常 */
+  --vp-button-brand-border: #43aefc; /* 边框色 */
+  --vp-button-brand-bg: #43aefc; /* 背景色 */
+
+  /* hover状态 */
+  --vp-button-brand-hover-border: #75c4fe;
+  --vp-button-brand-hover-bg: #75c4fe;
+
+  /* active状态-点击 */
+  --vp-button-brand-hover-border: #43aefc;
+  --vp-button-brand-active-bg: #43aefc;
+
+  /* 主题色 */
+  --vp-c-indigo-1: #43aefc; /* 主题色 */
+  --vp-c-indigo-2: #43aefc; /* 主题色-hover */
+  --vp-c-indigo-3: #43aefc;
+
+  /* 代码块 */
+  --vp-code-block-bg: #f6f8fa;
+  --vp-code-line-highlight-color: rgba(0, 0, 0, 0.05);
+}
+
+.VPNavBarTitle .title {
+  font-size: 22px !important;
+  font-weight: bold;
+}
+
+.dark {
+  --vp-code-block-bg: #1e1e1e;
+  --vp-code-line-highlight-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Mac 风格代码框 */
+.vp-doc div[class*='language-'] {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 16px 0;
+}
+
+.vp-doc div[class*='language-']::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f56;
+  box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+}
+
+.vp-doc div[class*='language-']::after {
+  content: attr(data-language);
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* 代码内容区域 */
+.vp-doc [class*='language-'] pre {
+  padding-top: 36px !important;
+}
+
+.vp-doc [class*='language-'] .line {
+  padding: 0 16px;
+}
+
+/* 深色模式下的按钮颜色 */
+.dark .vp-doc div[class*='language-']::before {
+  background: #ff5f56;
+  box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+}
